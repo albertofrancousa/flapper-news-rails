@@ -36,3 +36,6 @@ group :development do
   gem 'spring'
 end
 
+# Use your angular templates with rails' asset pipeline
+gem 'angular-rails-templates'
+
