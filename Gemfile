@@ -39,4 +39,8 @@ end
 # Use your angular templates with rails' asset pipeline
 gem 'angular-rails-templates'
 
+# Pretty printing in rails console
 gem 'awesome_print'
+
+# Tutorial was written before this gem was created extracting code from rails
+gem 'responders'
