@@ -39,3 +39,4 @@ end
 # Use your angular templates with rails' asset pipeline
 gem 'angular-rails-templates'
 
+gem 'awesome_print'
