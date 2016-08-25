@@ -3,9 +3,11 @@ angular.module('flapperNews')
 	.factory('posts', [
 		'$http',
 		function($http) {
+			
 			var o = {
 				posts: []
 			};
+			
 			o.getAll = function() {
 				return $http.get('/posts.json').success(
 					function(data) {
@@ -13,6 +15,17 @@ angular.module('flapperNews')
 					}
 				);
 			};
+
+			o.create = function(post) {
+				var res = $http.post('/posts.json', post);
+				res.success(
+					function(data) {
+						o.posts.push(data);
+					}
+				);
+				return res;
+			};
+			
 			return o;
 		}
 	])

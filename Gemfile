@@ -44,3 +44,6 @@ gem 'awesome_print'
 
 # Tutorial was written before this gem was created extracting code from rails
 gem 'responders'
+
+# Rails integration for AngularJS style CSRF protection
+gem 'angular_rails_csrf'
