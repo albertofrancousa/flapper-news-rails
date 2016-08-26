@@ -47,3 +47,6 @@ gem 'responders'
 
 # Rails integration for AngularJS style CSRF protection
 gem 'angular_rails_csrf'
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
